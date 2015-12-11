@@ -33,7 +33,6 @@ namespace CodeRage.ThingGrid.Web
         {
             // Add framework services.
             services.AddMvc();
-            services.AddSignalR();
         }
 
         //// ----------------------------------------------------------------------------------------------------------
@@ -52,7 +51,6 @@ namespace CodeRage.ThingGrid.Web
                 app.UseExceptionHandler("/Home/Error");
 
             app.UseIISPlatformHandler();
-            app.UseSignalR("/messaging");
             app.UseStaticFiles();
 
             app.UseMvc(routes =>
